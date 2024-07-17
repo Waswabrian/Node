@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <script scr="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+    <div id="app">
+    <h1 style="font-family:Arial, Helvetica, sans-serif;">Chanuka Quiz App</h1>
+    <h2 style="font-family:Arial, Helvetica, sans-serif;">Simple Quiz For Smart Brains</h2>
+    <!-- <h2>KAribu {{name}}, </h2> -->
+     <form action="index.js" method="POST">
+    <div id="questions">
+        
+            <h2 id="question" style="font-family:Arial, Helvetica, sans-serif;">Who's the most efficient scorer in NBA?</h2>
+        
+        <div action = "index.js" id="answer-buttons">
+            <button id="btn">Lebron James</button><br> 
+            <button id="btn">Kevin Durant</button> <br>
+            <button id="btn">Luca Doncic</button> <br> 
+            <button id="btn">Shai Gilgeous-Alexander</button> <br>  
+            <button id="next" onclick="handleNextButton()">Next</button>
+        </div>
+    </div>
+    </form>
+    </div>
+    <style>
+        body{
+            background-color:darkgray;
+            color:white;
+        }
+        #questions{
+            border-color:black;
+            border-radius:4px;
+            border-style:solid;
+            border-width:0.7px;
+        }
+        #quiz{
+            padding-top:30px;
+        }
+        #next{
+            width:150px;
+            height:40px;
+            background-color: darkblue;
+            border-radius:5px;
+            font-size:17px;
+            color:white;
+        }
+        #btn{
+            width:60%;
+            height:30px;
+            transition-duration: 0.3s;
+            font-size:17px;
+            border-style:solid;
+            border-width: 0.10px;
+            border-color:black;
+            border-radius:5px;
+        }
+        #btn:hover:not([disabled]){
+            background-color:black;
+            color:white;
+        }
+        #btn:disabled{
+            cursor:no-drop;
+        }
+        #app{
+            background-color:white;
+            width:45%;
+            height:100px;
+            border-radius:5px;
+            color:black;
+            display: block;
+            margin-left:26%;
+            padding:0px;
+            text-align:center;
+        }
+        .correct{
+            background:#9aeabc;
+        }
+        .incorrect{
+            background: #ff9393;
+        }
+    </style>
+    <script src="index.js"></script>
+</body>
+</html>
